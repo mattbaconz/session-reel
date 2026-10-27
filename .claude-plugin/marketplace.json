@@ -1,0 +1,6 @@
+{
+  "name": "session-reel",
+  "owner": { "name": "mattbaconz" },
+  "metadata": { "description": "session-reel: turn a Claude Code session into shareable MP4 replays with /reel" },
+  "plugins": [{ "name": "session-reel", "source": "./" }]
+}

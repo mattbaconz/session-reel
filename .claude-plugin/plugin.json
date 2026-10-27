@@ -1,0 +1,101 @@
+{
+  "name": "session-reel",
+  "version": "0.3.0",
+  "description": "Turn a Claude Code session into shareable MP4 replays, 16:9 and 9:16: /reel",
+  "author": {
+    "name": "mattbaconz"
+  },
+  "userConfig": {
+    "theme": {
+      "type": "string",
+      "title": "Theme",
+      "description": "desktop and desktop-light look like the Claude Code desktop app; paper is warm with serif replies; terminal looks like the CLI.",
+      "default": "desktop",
+      "options": [
+        "desktop",
+        "desktop-light",
+        "paper",
+        "terminal"
+      ]
+    },
+    "format": {
+      "type": "string",
+      "title": "Format",
+      "description": "both renders a 16:9 (YouTube, X) and a 9:16 (Shorts, Reels, TikTok) video each time.",
+      "default": "both",
+      "options": [
+        "both",
+        "horizontal",
+        "vertical"
+      ]
+    },
+    "length": {
+      "type": "number",
+      "title": "Length (seconds)",
+      "description": "Target video length, 10 to 600. Short sessions come out shorter.",
+      "default": 60
+    },
+    "sound": {
+      "type": "string",
+      "title": "Sound",
+      "description": "Typing under each prompt, the Enter key on send, a page flick over long breaks and one knock on the final count. Off by default; on adds them.",
+      "default": "off",
+      "options": [
+        "on",
+        "off"
+      ]
+    },
+    "volume": {
+      "type": "number",
+      "title": "Sound volume",
+      "description": "0 to 100.",
+      "default": 80
+    },
+    "text": {
+      "type": "string",
+      "title": "Text size",
+      "description": "large makes every line 15% bigger, for phone screens.",
+      "default": "normal",
+      "options": [
+        "normal",
+        "large"
+      ]
+    },
+    "camera": {
+      "type": "string",
+      "title": "Camera moves",
+      "description": "on opens close on the first prompt and pushes in while you type; off keeps the frame still.",
+      "default": "on",
+      "options": [
+        "on",
+        "off"
+      ]
+    },
+    "accent": {
+      "type": "string",
+      "title": "Accent colour",
+      "description": "A hex colour like #D97757 for the prompt mark and highlights. Empty uses the theme's.",
+      "default": ""
+    },
+    "watermark": {
+      "type": "string",
+      "title": "Watermark",
+      "description": "A small \"made with session-reel\" line on the closing card.",
+      "default": "on",
+      "options": [
+        "on",
+        "off"
+      ]
+    },
+    "fps": {
+      "type": "string",
+      "title": "Frame rate",
+      "description": "60 is smoother; 30 renders faster and makes smaller files.",
+      "default": "60",
+      "options": [
+        "60",
+        "30"
+      ]
+    }
+  }
+}
