@@ -5,6 +5,7 @@
   "author": {
     "name": "mattbaconz"
   },
+  "license": "MIT",
   "userConfig": {
     "theme": {
       "type": "string",

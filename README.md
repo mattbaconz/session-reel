@@ -103,3 +103,7 @@ The effects in `sfx/` were generated with ElevenLabs for this project, then trim
 node --test renderer/
 claude plugin test .
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
